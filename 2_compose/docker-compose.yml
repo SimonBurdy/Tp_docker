@@ -1,0 +1,9 @@
+version: "3"
+services:
+  convos:
+    image: convos/convos:v6.31
+    container_name: convos
+    ports:
+      - 2021:3000
+    volumes:
+      - $HOME/convos/data:/data
